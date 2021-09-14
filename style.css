@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+    --main_btn_color: #FCBE40;
+    --main_btn_hover: #EAAD39;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+.logo {
+    height: 5rem;
+}
+
+.background {
+    background: linear-gradient(0deg, rgba(157,157,157,1) 12%, rgba(246,246,246,1) 61%);
+    height: 50rem;
+    width: 100vw;
+    /* z-index: -1; */
+    position: relative;
+    top: 0;
+}
+
+.carousel-inner > .carousel-item > img {
+    width:100%; 
+    height: 30rem;
+    background-size: cover;
+}
+
+/* .navbar {
+    position: fixed;
+    top: 0;
+} */
+
+.hero_section {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+.presentation_image {
+    position: absolute;
+    top: 20%;
+    width: 1000px;
+}
+
+.main_img .image {
+        height: 31.25rem;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.bigger_text {
+    font-size: 90px;
+}
+
+nav .navbar-toggler {
+    border: none;
+}
+
+nav .navbar-toggler .navbar-toggler-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.bg-lightgrey {
+    background-color: rgba(240,240,240,1);
+}
+
+.el_boton {
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main_btn_color);
+    border: none;
+}
+
+.el_boton:hover {
+    background-color: var(--main_btn_hover);
+    border: none;
+}
+
+.home_link {
+    visibility: hidden;
+}
+
+.nav_link {
+    width: 8rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.nav_link_hover, .nav_link_active {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    /* margin-left: 3rem; */
+}
+
+.nav_link_active {
+    background: linear-gradient(0deg, rgba(234,173,57,0.20) 0%, rgba(255,255,255,0) 100%);
+    border-bottom: 1px var(--main_btn_hover) solid;
+}
+
+.nav_link_hover:hover {
+    background: linear-gradient(0deg, rgba(234,173,57,0.20) 0%, rgba(255,255,255,0) 100%);
+    /* height: 60px; */
+    display:flex;
+    align-items: center;
+    border-bottom: 1px var(--main_btn_hover) solid;
+}
+
+.buton_bottom {
+    border: 1px solid var(--main_btn_hover);
+    background: none;
+    color: var(--main_btn_hover);
+}
+
+div .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div .card-body p {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+/* div .card-body a {
+    align-self: center;
+} */
+
+@media screen and (max-width:700px) {
+    .hero_section {
+        padding-top: 7rem;
+    }
+
+    .hero_section_text {
+        padding: 0 5rem;
+    }
+
+    span .bigger_text {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .hero_section {
+        padding-top: 7rem;
+    }
+
+    .hero_section_text p {
+        font-size: 16px;
+        margin-bottom: 2rem;
+    }
+
+    .hero_section_text span.bigger_text {
+        font-size: 50px;
+    }
+
+    .hero_section_text h1 {
+        font-size: 25px;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bg_index {
+        height: 100vh;
+    }
+
+    header .main_img .imagine_hero {
+        height: 15rem;
+    }
+
+    .card_body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10rem;
+    }
+
+    .card_margin {
+        margin-top: 2rem;
+    }
+
+    footer {
+        height: 6rem;
+    }
+
+    .form_text, .title_form {
+        text-align: center;
+    }
+}
+
+.main_section {
+    width: 30%;
+    height: fit-content;
+    margin-top: 5rem;
+}
+
+.body_signin {
+    height: 100vh;
+}
+
+.forgot_password, .register_text {
+    font-size: .8rem;
+    min-width: 13rem;
+    text-align: center;
+}
+
+.register_text {
+    margin-top: .3rem;
+}
+
+.forgot_password {
+    margin-top: .6rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form_input {
+    width: 20rem;
+}
+
+form button {
+    width: 7rem;
+}
+
+.form_text {
+    min-width: 20rem;
+}
+
+.title_form {
+    min-width: 9rem;
+}
+
+.copyright {
+    font-size: .7rem;
+}
+
+/* Register Page */
+.terms_of_use {
+    font-size: .6rem;
+}
